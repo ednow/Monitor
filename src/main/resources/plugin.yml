@@ -1,0 +1,5 @@
+main: com.ednow.monitor.Monitor
+version: 1.0
+name: monitor
+author: ednow
+api-version: 1.18

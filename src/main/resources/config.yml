@@ -1,0 +1,27 @@
+# 由于不知道相关配置信息，默认不启用
+# 将下方的配置信息填好之后，把这个配置项改为true启用
+enable: false
+
+tencentAccount:
+  # 消息发送到的通知人qq号
+  # 发送到通知人的消息将发送如下四个信息
+    # 登录时间
+    # 昵称
+    # ip地址
+    # uuid
+    # 登录信息
+  admin: 123456789
+  # 消息发送到的通知群号
+  # 发送到qq群中的消息将隐藏ip和uuid
+  # 发送到通知群的消息将发送
+    # 登录时间
+    # 昵称
+  group: 123456789
+
+bot:
+#  qq bot的地址
+  url: "http://localhost:8080"
+#  qq bot的qq号
+  account: 123456789
+#  mirai-api-http配置文件中的verifyKey
+  verifyKey: abcdefghijk
