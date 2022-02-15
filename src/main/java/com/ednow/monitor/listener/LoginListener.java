@@ -44,7 +44,7 @@ public class LoginListener implements Listener {
         );
         HttpAdapter.send(
                 HttpAdapter.SendType.FRIEND,
-                JavaPlugin.getPlugin(Monitor.class).getConfig().getLong("tencentAccount.friend"),
+                JavaPlugin.getPlugin(Monitor.class).getConfig().getLong("tencentAccount.admin"),
                 messageToPerson
         );
     }
