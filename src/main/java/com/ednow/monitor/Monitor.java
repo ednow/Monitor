@@ -1,28 +1,18 @@
 package com.ednow.monitor;
 
 
-import com.alibaba.fastjson.JSON;
 import com.ednow.monitor.listener.AdvancementDoneListener;
 import com.ednow.monitor.listener.LoginListener;
 import com.ednow.monitor.listener.LogoutListener;
-import com.ednow.utils.Encode;
-import com.ednow.utils.TextReader;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.io.IOException;
-
 public class Monitor extends JavaPlugin implements Listener {
 
-    public String testReadFile(){
-        var string = this.getClass().getClassLoader().getResourceAsStream("chinese.json");
-        return TextReader.InputStreamToString(string);
-    }
 
     @Override
     public void onEnable(){
-        var result = Encode.unicodeToUtf8(testReadFile());
-        var lang = JSON.parse(result);
+
         // 如果没有配置文件，创建一份
         saveDefaultConfig();
         // 如果插件没有被启用则，退出

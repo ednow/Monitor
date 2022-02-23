@@ -30,8 +30,12 @@ eula.txt
 server.properties
 whitelist.json
 
-# 忽略python文件
+# 忽略测试用的python文件
 *.py
+# 忽略一些测试用的cmd脚本文件
+*.bat
+*.cmd
+*.txt
 
 # lib文件夹
 lib

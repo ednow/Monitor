@@ -4,6 +4,7 @@
 
 推送退出的信息到qq群中
 
+推送成就信息到qq群
 ## qq机器人
 采用[mirai](https://github.com/mamoe/mirai.git)的[官方http插件](https://github.com/project-mirai/mirai-api-http)作为qq机器人中间件
 
