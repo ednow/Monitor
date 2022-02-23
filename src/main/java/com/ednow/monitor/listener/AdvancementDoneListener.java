@@ -31,7 +31,7 @@ public class AdvancementDoneListener implements Listener {
         var lang = (JSONObject) JSON.parse(TextReader.InputStreamToString(string));
 
 //        如果不是成就那么跳过
-        if (!event.getAdvancement().getKey().toString().split("/")[0].equals("minecraft:story")) {
+        if (event.getAdvancement().getKey().toString().split("/")[0].equals("minecraft:recipes")) {
             return;
         }
 
