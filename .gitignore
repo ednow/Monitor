@@ -30,6 +30,8 @@ eula.txt
 server.properties
 whitelist.json
 
+# 忽略python文件
+*.py
 
 # lib文件夹
 lib

@@ -10,6 +10,9 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * 当玩家退出服务器时触发
+ */
 public class LogoutListener implements Listener {
     @EventHandler
     public static void onQuit(PlayerQuitEvent event) {
