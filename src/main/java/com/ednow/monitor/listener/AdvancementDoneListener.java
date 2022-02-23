@@ -29,9 +29,11 @@ public class AdvancementDoneListener implements Listener {
 //        读取翻译文件
         var string = this.getClass().getClassLoader().getResourceAsStream("chinese.json");
         var lang = (JSONObject) JSON.parse(TextReader.InputStreamToString(string));
+        assert lang != null;
 
+        var type = event.getAdvancement().getKey().toString().split("/")[0];
 //        如果不是成就那么跳过
-        if (event.getAdvancement().getKey().toString().split("/")[0].equals("minecraft:recipes")) {
+        if (type.equals("minecraft:recipes")) {
             return;
         }
 
@@ -41,13 +43,13 @@ public class AdvancementDoneListener implements Listener {
 //        因为 <原因>
 //        获得成就  <成就>
         var advanceKey = event.getAdvancement().getKey().toString().split("/")[1];
-        assert lang != null;
+        var prefix = "advancements." + type.split(":")[1] + "." + advanceKey;
         String message = String.format(
                 "%s\n%s\n因为 <%s>\n获得成就 <%s>",
                 new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()),
                 event.getPlayer().getDisplayName(),
-                lang.getString("advancements.story." + advanceKey + ".description"),
-                lang.getString("advancements.story." + advanceKey + ".title")
+                lang.getString(prefix + ".description"),
+                lang.getString(prefix + ".title")
         );
         HttpAdapter.send(
                 HttpAdapter.SendType.GROUP,
