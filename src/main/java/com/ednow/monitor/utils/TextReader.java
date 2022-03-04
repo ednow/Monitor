@@ -1,7 +1,6 @@
-package com.ednow.utils;
+package com.ednow.monitor.utils;
 
 import java.io.*;
-import java.nio.charset.StandardCharsets;
 
 public class TextReader {
     public static String InputStreamToString(InputStream input) {

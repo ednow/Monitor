@@ -5,7 +5,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.ednow.monitor.Monitor;
 import com.ednow.monitor.qqbot.HttpAdapter;
-import com.ednow.utils.TextReader;
+import com.ednow.monitor.utils.*;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerAdvancementDoneEvent;

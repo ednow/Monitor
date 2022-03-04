@@ -25,3 +25,6 @@ bot:
   account: 123456789
 #  mirai-api-http配置文件中的verifyKey
   verifyKey: abcdefghijk
+
+http:
+  port: 8888

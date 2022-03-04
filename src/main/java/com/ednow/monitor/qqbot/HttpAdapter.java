@@ -3,7 +3,7 @@ package com.ednow.monitor.qqbot;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.ednow.monitor.Monitor;
-import com.ednow.monitor.http.HttpRequest;
+import com.ednow.monitor.utils.*;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.ArrayList;
