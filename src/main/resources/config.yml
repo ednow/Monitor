@@ -2,6 +2,10 @@
 # 将下方的配置信息填好之后，把这个配置项改为true启用
 enable: false
 
+# 默认启用自动ban ip服务
+# 如果有不在白名单上的
+autoBlockEnable: true
+
 tencentAccount:
   # 消息发送到的通知人qq号
   # 发送到通知人的消息将发送如下四个信息
